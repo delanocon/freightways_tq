@@ -36,7 +36,7 @@
 					}
 				}
 			],
-			"_postman_id": "105747e2-2ec6-47a8-85c5-a018fac42e73",
+			"id": "105747e2-2ec6-47a8-85c5-a018fac42e73",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -231,7 +231,7 @@
 					}
 				}
 			],
-			"_postman_id": "989fd76c-0618-4e9a-9c7d-764ca7af29d0",
+			"id": "989fd76c-0618-4e9a-9c7d-764ca7af29d0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -266,8 +266,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "100",
-							"type": "string"
+							"value": "33"
 						}
 					]
 				}
@@ -583,7 +582,7 @@
 					}
 				}
 			],
-			"_postman_id": "21785e6e-85a7-4d37-bb6a-f9ccdff47781",
+			"id": "21785e6e-85a7-4d37-bb6a-f9ccdff47781",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -618,8 +617,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "idontexist",
-							"type": "string"
+							"value": "idontexist"
 						}
 					]
 				}
@@ -648,7 +646,7 @@
 					}
 				}
 			],
-			"_postman_id": "433b8f22-984f-4ef9-8159-3b3993c14a8f",
+			"id": "433b8f22-984f-4ef9-8159-3b3993c14a8f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -690,7 +688,7 @@
 					}
 				}
 			],
-			"_postman_id": "32e31a7d-7e68-4a88-8b20-4864532ea247",
+			"id": "32e31a7d-7e68-4a88-8b20-4864532ea247",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -746,7 +744,7 @@
 					}
 				}
 			],
-			"_postman_id": "3b416360-d339-429a-976e-840acdab1537",
+			"id": "3b416360-d339-429a-976e-840acdab1537",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -769,10 +767,9 @@
 	],
 	"variable": [
 		{
-			"id": "4dcad832-a661-48ce-9f40-bf41240f530f",
+			"id": "efbe9df6-2ff2-4107-85d7-6ddf07d34702",
 			"key": "BaseURL",
-			"value": "https://jsonplaceholder.typicode.com/posts",
-			"type": "string"
+			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
 	]
 }
