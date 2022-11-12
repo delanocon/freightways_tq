@@ -220,11 +220,14 @@
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204, 207])",
 							"});",
-							"pm.test(\"Response time is less than 600ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(600);",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 							"});  ",
 							"pm.test(\"Content-Type is present\", function () {",
 							"    pm.response.to.have.header(\"Content-Type\");",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\");",
 							"});"
 						],
 						"type": "text/javascript"
@@ -266,7 +269,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "33"
+							"value": "1"
 						}
 					]
 				}
@@ -767,7 +770,7 @@
 	],
 	"variable": [
 		{
-			"id": "efbe9df6-2ff2-4107-85d7-6ddf07d34702",
+			"id": "4a3529bd-9ec6-4925-8f54-2ffe9e7e18fc",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
