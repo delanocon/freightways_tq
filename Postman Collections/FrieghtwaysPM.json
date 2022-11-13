@@ -64,7 +64,6 @@
 							"",
 							"pm.test('Schema is valid', function() {",
 							"  pm.expect(tv4.validate(data1, schema)).to.be.false;",
-							"//   pm.expect(tv4.validate(data2, schema)).to.be.true; // this statement would not be true",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1441,7 +1440,7 @@
 	],
 	"variable": [
 		{
-			"id": "4a1f6155-918b-4f0c-8129-9cd631c5629c",
+			"id": "60c54307-56c6-481f-84c3-e4a3c34fa71f",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
