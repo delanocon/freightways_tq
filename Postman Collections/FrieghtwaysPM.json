@@ -1328,8 +1328,8 @@
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204, 207])",
 							"});",
-							"pm.test(\"Response time is less than 700ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(700);",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 							"});",
 							"pm.test(\"Content-Type is present\", function () {",
 							"    pm.response.to.have.header(\"Content-Type\");",
@@ -1418,7 +1418,7 @@
 	],
 	"variable": [
 		{
-			"id": "d09e7617-b61a-445c-89ce-ae02d7935d86",
+			"id": "990712c3-2c54-47d7-8e24-9841f9d25f35",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
