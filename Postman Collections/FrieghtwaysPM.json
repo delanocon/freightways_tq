@@ -1283,8 +1283,8 @@
 					"script": {
 						"id": "8eb8e804-300e-47c3-a538-2bd719e70bbd",
 						"exec": [
-							"pm.test(\"Response time is less than 700ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(700);",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 							"});",
 							"pm.test(\"Successful POST request\", function () {",
 							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
@@ -1418,7 +1418,7 @@
 	],
 	"variable": [
 		{
-			"id": "a1706902-92cc-45f0-883b-cea4e192c034",
+			"id": "e9b1aa6f-1456-435e-9b1d-f0f8ebb313fd",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
