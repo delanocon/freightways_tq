@@ -19,9 +19,6 @@
 							"pm.test(\"Response time is less than 1000ms\", function () {",
 							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 							"});",
-							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\");",
-							"});",
 							"pm.test(\"Content-Type is present\", function () {",
 							"    pm.response.to.have.header(\"Content-Type\");",
 							"});",
@@ -1440,7 +1437,7 @@
 	],
 	"variable": [
 		{
-			"id": "60c54307-56c6-481f-84c3-e4a3c34fa71f",
+			"id": "74e4aa64-8253-4709-8054-1f4f3d7f448d",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
