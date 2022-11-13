@@ -1291,6 +1291,14 @@
 							"});",
 							"pm.test(\"Status code - Created is present\", function () {",
 							"    pm.response.to.have.status(\"Created\");",
+							"});",
+							"const jsonData = pm.response.json();",
+							"pm.test(\"Data type of new object\", () => {",
+							"  pm.expect(jsonData).to.be.an(\"object\");",
+							"  pm.expect(jsonData.title).to.be.a(\"string\");",
+							"  pm.expect(jsonData.body).to.be.a(\"string\");",
+							"  pm.expect(jsonData.userId).to.be.a(\"number\");",
+							"  pm.expect(jsonData.id).to.be.a(\"number\");",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1433,7 +1441,7 @@
 	],
 	"variable": [
 		{
-			"id": "fec46abd-673a-4d79-ad2c-8d5812ce5ffc",
+			"id": "4a1f6155-918b-4f0c-8129-9cd631c5629c",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
