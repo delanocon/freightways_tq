@@ -1355,7 +1355,22 @@
 						}
 					}
 				},
-				"url": "{{BaseURL}}/1"
+				"url": {
+					"raw": "{{BaseURL}}/1?id=101",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "101",
+							"type": "text"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -1418,7 +1433,7 @@
 	],
 	"variable": [
 		{
-			"id": "e9b1aa6f-1456-435e-9b1d-f0f8ebb313fd",
+			"id": "fec46abd-673a-4d79-ad2c-8d5812ce5ffc",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
