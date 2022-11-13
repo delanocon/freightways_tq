@@ -1224,8 +1224,8 @@
 							"pm.test(\"Status code is 404\", function () {",
 							"    pm.response.to.have.status(404);",
 							"});",
-							"pm.test(\"Response time is less than 600ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(600);",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
 							"});",
 							""
 						],
@@ -1418,7 +1418,7 @@
 	],
 	"variable": [
 		{
-			"id": "990712c3-2c54-47d7-8e24-9841f9d25f35",
+			"id": "a1706902-92cc-45f0-883b-cea4e192c034",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
