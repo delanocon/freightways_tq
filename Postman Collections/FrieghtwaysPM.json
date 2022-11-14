@@ -1210,68 +1210,6 @@
 			]
 		},
 		{
-			"name": "Data not found",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "1d6d3c21-6617-4ea7-857c-9ce6ce22c2b9",
-						"exec": [
-							"pm.test(\"Status code is 404\", function () {",
-							"    pm.response.to.have.status(404);",
-							"});",
-							"pm.test(\"Response time is less than 1000ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
-							"});",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "21785e6e-85a7-4d37-bb6a-f9ccdff47781",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{BaseURL}}/:id",
-					"host": [
-						"{{BaseURL}}"
-					],
-					"path": [
-						":id"
-					],
-					"query": [
-						{
-							"key": "title",
-							"value": "qui est esse",
-							"type": "text",
-							"disabled": true
-						}
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": "idontexist"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Creating a resource",
 			"event": [
 				{
@@ -1407,7 +1345,6 @@
 							"",
 							"pm.test('Schema is valid', function() {",
 							"  pm.expect(tv4.validate(data1, schema)).to.be.true;",
-							"//   pm.expect(tv4.validate(data2, schema)).to.be.true; // this statement would not be true",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1433,11 +1370,73 @@
 				"url": "{{BaseURL}}/101"
 			},
 			"response": []
+		},
+		{
+			"name": "Data not found",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1d6d3c21-6617-4ea7-857c-9ce6ce22c2b9",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "21785e6e-85a7-4d37-bb6a-f9ccdff47781",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/:id",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						":id"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "qui est esse",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "idontexist"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "74e4aa64-8253-4709-8054-1f4f3d7f448d",
+			"id": "9ccdfada-cada-4cd1-8e3e-c6dc8aea88c4",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
