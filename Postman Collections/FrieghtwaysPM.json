@@ -1210,7 +1210,7 @@
 			]
 		},
 		{
-			"name": "Creating a resource",
+			"name": "Creating a Resource",
 			"event": [
 				{
 					"listen": "test",
@@ -1436,7 +1436,7 @@
 	],
 	"variable": [
 		{
-			"id": "9ccdfada-cada-4cd1-8e3e-c6dc8aea88c4",
+			"id": "a6a75a4d-e967-45cb-a2fb-489d5a83567a",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
