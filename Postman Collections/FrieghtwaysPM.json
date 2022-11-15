@@ -1317,7 +1317,7 @@
 			"response": []
 		},
 		{
-			"name": "Deleting a resource",
+			"name": "Deleting a Resource",
 			"event": [
 				{
 					"listen": "test",
@@ -1436,7 +1436,7 @@
 	],
 	"variable": [
 		{
-			"id": "7cde0a16-f67a-4795-ad20-bf7e5f1bb82e",
+			"id": "97d0c2c7-f31d-4a4c-8e65-2e702e873812",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
