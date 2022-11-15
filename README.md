@@ -110,3 +110,43 @@ I tried to implement the CI/CD
 
 CI Pipeline
 
+Continuous Integration (CI) is a development practice that requires developers to regularly merge code updates into a shared repository. It involves the process of automating the build and testing of code every time a developer commits code updates.
+The benefits of the CI/CD pipeline is that it automates your software delivery process. The pipeline builds code, runs tests (CI), and safely deploys a new version of the application (CD).
+Automated pipelines remove manual errors, provide standardized feedback loops to developers, and enable fast product iterations.
+
+CI is a software development practice in which all developers merge code changes in a central repository multiple times a day. CD stands for Continuous Delivery, which on top of Continuous Integration adds the practice of automating the entire software release process.
+With CI, each change in code triggers an automated build-and-test sequence for the given project, providing feedback to the developer(s) who made the change. The entire CI feedback loop should run in less than 10 minutes.
+
+CD includes infrastructure provisioning and deployment, which may be manual and consist of multiple stages. What’s important is that all these processes are fully automated, with each run fully logged and visible to the entire team.
+
+It’s essentially a runnable specification of the steps that any developer needs to perform to deliver a new version of a software product. In the absence of an automated pipeline, engineers would still need to perform these steps manually, and hence far less productively.
+
+The typical stages include:
+
+- Source
+    - Gitpush
+- Build
+    - Compile
+    - Docker Build
+- Test
+    - Smoke
+    - Unit 
+    - Integration
+- Deploy
+    - Staging
+    - ----> QA
+    - Produciton
+
+Build stage requires us to combine the source code with its depedancies to build a runnable instance of our product.
+Failure to pass the build stage is an indicator of a fundamental problem in a project’s configuration, and it’s best to address it immediately.
+
+Test phase we run automated tests to validate that our code is correct and to observe the behaviour of our product. In essence this is a safety net that prevents bugs from reaching end users.
+The size and complexity of the project will determine how long this phase takes as it can run in multiple stages.
+
+Failure during the test stage exposes problems in code. The sooner this is presented to the developers the better, as the coding is still fresh in their minds.
+
+Once we have a built a runnable instance of our code that has passed all predefined tests, we’re ready to deploy it. There are usually multiple deploy environments, for example, a “beta” or “staging” environment which is used internally by the product team, and a “production” environment for end-users.
+
+Teams that have embraced the Agile model of development—guided by tests and real-time monitoring—usually deploy work-in-progress manually to a staging environment for additional manual testing and review, and automatically deploy approved changes from the master branch to production.
+
+For my project I tried to use Newman in order to run my Postman environment. However I ran into an unexpected outcome whereby the kernel would not install onto my system without running it in sudo. Being wary of this route and potential vulnerabilities on my system I did not continue with this option.
