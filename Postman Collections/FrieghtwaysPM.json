@@ -13,16 +13,6 @@
 					"script": {
 						"id": "0e876daf-44d1-4814-a28d-666d04e01861",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204, 207])",
-							"});",
-							"pm.test(\"Response time is less than 1000ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
-							"});",
-							"pm.test(\"Content-Type is present\", function () {",
-							"    pm.response.to.have.header(\"Content-Type\");",
-							"});",
-							"",
 							"let jsonResponse = pm.response.json();",
 							"",
 							"pm.test(\"Response should be a parsable JSON\", function() {",
@@ -61,6 +51,16 @@
 							"",
 							"pm.test('Schema is valid', function() {",
 							"  pm.expect(tv4.validate(data1, schema)).to.be.false;",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204, 207])",
+							"});",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\");",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1436,7 +1436,7 @@
 	],
 	"variable": [
 		{
-			"id": "879a48d0-f123-4d62-b589-2b668c858ddd",
+			"id": "8e6353a8-2e91-4d9f-98b6-c3a1d60a1344",
 			"key": "BaseURL",
 			"value": "https://jsonplaceholder.typicode.com/posts"
 		}
